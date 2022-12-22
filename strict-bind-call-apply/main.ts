@@ -17,4 +17,4 @@ const c1 = fn.apply(undefined, ["19"]);
 const c2 = fn.apply(undefined, [false]); // strictBindCallApply = true. 报错
 
 const d1 = fn.bind(undefined, "19");
-const d2 = fn.bind(undefined, false);
+const d2 = fn.bind(undefined, false); // strictBindCallApply = true. 报错
