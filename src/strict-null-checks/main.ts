@@ -3,7 +3,16 @@
  * 
  * null 和 undefined 是其它类型（包括 void）的子类型，可以赋值给其它类型（如：数字类型
  * 默认情况下，编译器会提示错误，这是因为 tsconfig.json 里面配置项 strictNullChecks 是默认开启的。
+ * strictNullChecks 开启后，null，undefined不允许被赋值 其他类型，包括 null 和 undefined 也不能互相赋值
  */
+
+let _undefined1: undefined;
+let _null1: null;
+_undefined1 = _null1
+
+let _undefined2: undefined;
+let _null2: null;
+_null2 = _undefined2
 
 let str: string;
 str = null;
